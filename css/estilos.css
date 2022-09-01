@@ -1,0 +1,44 @@
+h5.offcanvas-title {
+    color: white;
+}
+
+h1.medio{
+    text-align: center;
+}
+footer {
+    grid-area: footerRedes;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer.footerRedes {
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    animation: text 3s 1;
+    width: 100%;
+}
+
+footer div p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* valor no wrap, para que no se baje en tamaños desde 768px */
+        flex-wrap:  wrap;
+    }
+    footer div {
+        margin: 20px;
+    }
+}
+
+
